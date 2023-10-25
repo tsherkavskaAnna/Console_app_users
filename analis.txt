@@ -1,0 +1,74 @@
+**Analisi Software: Gestione di un Magazzino con una App Console**
+
+### **1. Introduzione:**
+L'obiettivo di questa applicazione è creare un sistema di gestione di magazzino tramite una applicazione console. L'applicazione dovrebbe permettere agli utenti di visualizzare, aggiungere, modificare e eliminare prodotti nel magazzino.
+
+### **2. Requisiti Funzionali:**
+
+#### **2.1 Visualizzazione Prodotti:**
+- L'applicazione deve consentire agli utenti di visualizzare l'elenco dei prodotti nel magazzino.
+- Gli utenti dovrebbero essere in grado di filtrare i prodotti per categoria, prezzo, disponibilità, ecc.
+
+#### **2.2 Aggiunta di Prodotti:**
+- L'applicazione dovrebbe consentire agli utenti di aggiungere nuovi prodotti nel magazzino.
+- I dettagli del prodotto, come nome, categoria, prezzo e disponibilità, devono essere specificati.
+
+#### **2.3 Modifica di Prodotti:**
+- Gli utenti autorizzati devono poter modificare i dettagli dei prodotti esistenti nel magazzino.
+- I dettagli modificabili possono includere nome, categoria, prezzo e disponibilità.
+
+#### **2.4 Eliminazione di Prodotti:**
+- Gli utenti autorizzati devono poter eliminare i prodotti esistenti dal magazzino.
+
+#### **2.5 Analisi Vendite:**
+- L'applicazione dovrebbe permettere di analizzare le vendite dei prodotti nel tempo.
+- Dovrebbe essere possibile visualizzare le vendite mensili o giornaliere.
+
+#### **2.6 Prodotti Più Venduti:**
+- L'applicazione deve essere in grado di identificare e mostrare i prodotti più venduti durante un certo periodo.
+
+### **3. Requisiti Non Funzionali:**
+
+#### **3.1 Sicurezza:**
+- L'applicazione deve essere protetta da accessi non autorizzati.
+- I dati sensibili, come password o dati finanziari, devono essere adeguatamente crittografati.
+
+#### **3.2 Usabilità:**
+- L'interfaccia utente deve essere intuitiva e facile da usare.
+- Gli errori dovrebbero essere gestiti in modo amichevole e informativo per gli utenti.
+
+#### **3.3 Performance:**
+- L'applicazione deve essere in grado di gestire grandi quantità di dati senza rallentamenti significativi.
+
+### **4. Architettura del Software:**
+
+#### **4.1 Struttura del Codice:**
+- L'applicazione potrebbe essere organizzata utilizzando il pattern di progettazione **MVC (Model-View-Controller)**.
+- **Modello (Model)**: Rappresenta i dati e la logica di business.
+- **Vista (View)**: Si occupa della presentazione dei dati all'utente.
+- **Controller**: Gestisce le interazioni tra Modello e Vista.
+
+#### **4.2 Database:**
+- L'applicazione potrebbe utilizzare un database SQL Server per memorizzare i dati dei prodotti, delle vendite e altre informazioni necessarie.
+- Potrebbe essere necessario creare diverse tabelle per gestire i prodotti, le vendite e altre entità correlate.
+
+### **5. Workflow dell'Applicazione:**
+
+1. **Avvio dell'Applicazione:**
+   - L'applicazione mostra un menu principale all'utente.
+
+2. **Visualizzazione Prodotti:**
+   - L'utente seleziona l'opzione per visualizzare i prodotti.
+   - L'applicazione recupera i dati dei prodotti dal database e li mostra all'utente.
+
+3. **Aggiunta di Prodotti:**
+   - L'utente seleziona l'opzione per aggiungere un nuovo prodotto.
+   - L'applicazione richiede all'utente di inserire i dettagli del nuovo prodotto.
+   - I dettagli vengono validati e memorizzati nel database.
+
+4. **Modifica di Prodotti:**
+   - L'utente seleziona l'opzione per modificare un prodotto esistente.
+   - L'applicazione mostra l'elenco dei prodotti e l'utente seleziona quello da modificare.
+   - L'applicazione richiede all'utente di inserire i nuovi dettagli del prodotto.
+   - I dettagli vengono validati e aggiornati nel database.
+
