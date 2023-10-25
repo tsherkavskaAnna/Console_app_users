@@ -72,3 +72,65 @@ L'obiettivo di questa applicazione è creare un sistema di gestione di magazzino
    - L'applicazione richiede all'utente di inserire i nuovi dettagli del prodotto.
    - I dettagli vengono validati e aggiornati nel database.
 
+
+
+   
+
+**Analisi del Software: Gestione Utenti**
+
+### **1. Introduzione:**
+
+L'applicazione di gestione utenti è un sistema che consente agli utenti di eseguire operazioni di base come visualizzare, aggiungere, aggiornare e eliminare utenti dal sistema. Questa applicazione sarà basata su una struttura di database relazionale e interagirà con il database per eseguire queste operazioni.
+
+### **2. Requisiti Funzionali:**
+
+L'applicazione deve permettere agli utenti di:
+
+- Visualizzare tutti gli utenti nel sistema.
+- Aggiungere un nuovo utente specificando il nome, il cognome, l'email, il genere e lo stato di attività.
+- Aggiornare i dettagli di un utente esistente.
+- Eliminare un utente dal sistema.
+
+### **3. Requisiti Non Funzionali:**
+
+- **Sicurezza:** L'applicazione deve proteggere i dati sensibili degli utenti e deve evitare vulnerabilità come l'SQL Injection.
+- **Performance:** L'applicazione deve rispondere in modo tempestivo anche con un grande numero di utenti nel sistema.
+- **Usabilità:** L'interfaccia utente deve essere intuitiva e facile da usare.
+- **Affidabilità:** L'applicazione deve essere stabile e gestire eventuali errori senza crashare.
+
+### **4. Struttura del Codice:**
+
+L'applicazione seguirà il pattern MVC (Model-View-Controller):
+
+- **Modello (Model):** Rappresenterà i dati e la logica di business. Includerà una classe `User` per rappresentare un utente.
+  
+- **Vista (View):** Si occuperà della presentazione all'utente. Nella tua applicazione console, questa sarà l'interfaccia utente che mostra i risultati delle operazioni.
+
+- **Controller:** Sarà responsabile di ricevere gli input dall'utente, instradare le richieste al Modello per l'elaborazione e quindi visualizzare i risultati nella Vista.
+
+### **5. Diagrammi:**
+
+- **Diagramma delle Classi:** Mostrerà la struttura delle classi nella tua applicazione, inclusi `User` e altre classi rilevanti.
+
+- **Diagramma dei Sequenza:** Mostrerà come i vari componenti (Controller, Modello, Vista) interagiscono durante operazioni come l'aggiunta di un nuovo utente.
+
+### **6. Database:**
+
+- Utilizzerai un database SQL per conservare i dati degli utenti. La struttura del database includerà una tabella `Users` con campi come `UserId`, `FirstName`, `LastName`, `Email`, `Gender`, e `Active`.
+
+### **7. Testing:**
+
+- Implementerai test unitari per verificare le funzionalità del Modello, assicurandoti che le operazioni come l'aggiunta e l'aggiornamento degli utenti funzionino correttamente.
+
+### **8. Sicurezza:**
+
+- Implementerai buone pratiche di sicurezza, come l'uso di parametri nelle query SQL per prevenire attacchi di SQL Injection.
+
+### **9. Interazione Utente:**
+
+- All'avvio, l'applicazione mostrerà un menu all'utente, consentendogli di selezionare le operazioni che desidera eseguire.
+
+### **10. Conclusioni:**
+
+Questa analisi fornisce una panoramica chiara di come verrà sviluppata l'applicazione di gestione utenti, comprese le funzionalità, la struttura del codice, il design del database e le considerazioni di sicurezza. Seguire il pattern MVC aiuterà a mantenere il codice ben organizzato e manutenibile nel tempo. Una volta completata, l'applicazione consentirà agli utenti di gestire facilmente i dati degli utenti nel sistema.   
+
